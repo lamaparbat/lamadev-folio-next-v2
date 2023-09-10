@@ -5,8 +5,8 @@ import { TAB_ITEMS } from "./interface";
 export const DEFAULT_TAB_ITEMS: TAB_ITEMS[] = [
   { title: "Feed", path: "/", icon: <LuLayoutDashboard /> },
   { title: "Projects", path: "/projects", icon: <LuShoppingBag /> },
-  { title: "Blog", path: "/blog", icon: <ImBlog /> },
-  { title: "Contact", path: "/contact", icon: <LuContact /> },
+  { title: "Blog", path: "/blogs", icon: <ImBlog /> },
+  { title: "Contact", path: "/contacts", icon: <LuContact /> },
 ]
 
 export const MEDIA_TAB_ITEMS = [
