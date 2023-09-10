@@ -1,5 +1,6 @@
 import './globals.css';
 import 'animate.css';
+import 'react-tooltip/dist/react-tooltip.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import TabNavigation from '@/Components/TabNavigation';
@@ -20,9 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} p-5`}>
+      <body className={`${inter.className} p-5 py-[100px]`}>
         <TabNavigation />
-        {children}
+        <div className='flex-center'>
+          <div className='flex-center w-[550px]'>
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   )
