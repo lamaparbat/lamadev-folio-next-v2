@@ -1,3 +1,4 @@
+import Card from '@/Components/Card';
 import JobStatus from '@/Components/JobStatus';
 import { LuSearch } from 'react-icons/lu';
 
@@ -20,6 +21,32 @@ export default function Home() {
         <div className='flex justify-between items-center'>
           <h6>My Feed</h6>
           <LuSearch className="text-lg cursor-pointer" />
+        </div>
+        <div className='my-5 flex flex-wrap justify-between'>
+          <Card
+            title="Clothing Brand Site"
+            description="This site is an ecommerce clothing brand distributors"
+            image=""
+            link={{ siteLink: "" }}
+          />
+          <Card
+            title="Clothing Brand Site"
+            description="This site is an ecommerce clothing brand distributors"
+            image=""
+            link={{ siteLink: "" }}
+          />
+          <Card
+            title="Clothing Brand Site"
+            description="This site is an ecommerce clothing brand distributors"
+            image=""
+            link={{ siteLink: "" }}
+          />
+          <Card
+            title="Clothing Brand Site"
+            description="This site is an ecommerce clothing brand distributors"
+            image=""
+            link={{ siteLink: "" }}
+          />
         </div>
       </div>
 
