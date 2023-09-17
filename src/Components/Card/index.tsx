@@ -1,12 +1,16 @@
 'use client';
 
 import React from 'react';
-import { styles } from './constants';
-import { CardType } from './interface';
 import Image from 'next/image';
 import { LuGithub, LuArrowUpRight } from 'react-icons/lu';
 import { CgLivePhoto } from 'react-icons/cg';
+import { motion } from "framer-motion";
+
 import useCard from './useCard';
+import { styles } from './constants';
+import { CardType } from './interface';
+import { slideUp } from '@/Constants';
+
 
 const Card: React.FC<CardType> = ({ title, description, image, link, key }) => {
 
@@ -18,7 +22,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, key }) => {
 
   return (
     <div>
-      <div className={styles.card}>
+      <motion.div className={styles.card} variants={slideUp} initial="start" animate="slideUp" exit="end">
         <h5 className={styles.title}>{title}</h5>
         <p className={styles.para}>{description}</p>
         <div className={styles.imgContainer}>
@@ -29,7 +33,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, key }) => {
             width={300}
           />
         </div>
-      </div>
+      </motion.div>
       <div className={styles.footer}>
         <div className={styles.footer_child} onMouseOver={() => handleMouseOverFooter(`${key}-github`)} onMouseOut={handleMouseLeaveFooter}>
           <div className={styles.flex_between}>
@@ -45,7 +49,6 @@ const Card: React.FC<CardType> = ({ title, description, image, link, key }) => {
             <div className={styles.badge}><CgLivePhoto /></div>
             {showArrowIcon === `${key}-live` && <LuArrowUpRight />}
           </div>
-
           <h5 className={styles.title}>Live</h5>
           <p className={styles.sub_title}>Website link</p>
         </div>

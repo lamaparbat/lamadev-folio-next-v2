@@ -1,5 +1,4 @@
 import './globals.css';
-import 'animate.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';

@@ -23,6 +23,6 @@ export const MEDIA_TAB_ITEMS = [
 export const styles = {
   wrapper: "w-fit h-screen fixed flex-center",
   vertical_navbar: "py-1 my-3 w-[60px] flex-center text-black text-xl rounded-full shadow-xl border border-slate-50",
-  nav_button: "p-4 rounded-full hover:bg-slate-300 ease-in-out duration-500 cursor:pointer hover:animate__animated hover:animate__slideInDown",
+  nav_button: "p-4 rounded-full hover:bg-slate-300 ease-in-out duration-500 cursor:pointer",
   tooltip: "ml-4 rounded-r-xl"
 }
