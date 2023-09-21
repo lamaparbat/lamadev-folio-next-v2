@@ -22,7 +22,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, id }) => {
 
   return (
     <div>
-      <div className="p-2 bg-white h-fit w-[270px] border-color card-shadow rounded-md cursor-pointer">
+      <motion.div className={styles.card} variants={slideUp} initial="start" animate="slideUp" exit="end">
         <h5 className={styles.title}>{title}</h5>
         <p className={styles.para}>{description}</p>
         <div className={styles.imgContainer}>
@@ -33,7 +33,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, id }) => {
             width={300}
           />
         </div>
-      </div>
+      </motion.div>
       <div className={styles.footer}>
         <div className={styles.footer_child} onMouseOver={() => handleMouseOverFooter(`${id}-github`)} onMouseOut={handleMouseLeaveFooter}>
           <div className={styles.flex_between}>
