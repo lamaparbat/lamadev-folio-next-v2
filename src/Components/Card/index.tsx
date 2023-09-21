@@ -22,7 +22,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, id }) => {
 
   return (
     <div>
-      <motion.div className={styles.card} variants={slideUp} initial="start" animate="slideUp" exit="end">
+      <motion.div className="p-2 bg-white h-fit w-[270px] border-color card-shadow rounded-md cursor-pointer" variants={slideUp} initial="start" animate="slideUp" exit="end">
         <h5 className={styles.title}>{title}</h5>
         <p className={styles.para}>{description}</p>
         <div className={styles.imgContainer}>
