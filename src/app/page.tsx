@@ -32,28 +32,28 @@ export default function Home() {
             description="This site is an ecommerce clothing brand distributors"
             image=""
             link={{ siteLink: "" }}
-            key={0}
+            id={0}
           />
           <Card
             title="Clothing Brand Site"
             description="This site is an ecommerce clothing brand distributors"
             image=""
             link={{ siteLink: "" }}
-            key={1}
+            id={1}
           />
           <Card
             title="Clothing Brand Site"
             description="This site is an ecommerce clothing brand distributors"
             image=""
             link={{ siteLink: "" }}
-            key={2}
+            id={2}
           />
           <Card
             title="Clothing Brand Site"
             description="This site is an ecommerce clothing brand distributors"
             image=""
             link={{ siteLink: "" }}
-            key={3}
+            id={3}
           />
         </div>
       </div>

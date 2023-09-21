@@ -10,5 +10,5 @@ export interface CardType {
   description: string,
   image: string,
   link: Link,
-  key: number
+  id: number
 }

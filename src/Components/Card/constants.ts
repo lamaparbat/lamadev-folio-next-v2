@@ -1,8 +1,5 @@
 
 
-
-
-
 // styles
 export const styles = {
   card: "p-2 bg-white h-fit w-[270px] border-color card-shadow rounded-md cursor-pointer",
