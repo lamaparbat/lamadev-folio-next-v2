@@ -2,12 +2,8 @@ import './globals.css';
 import 'react-tooltip/dist/react-tooltip.css';
 
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
 import TabNavigation from '@/Components/TabNavigation';
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Lama Dev',
@@ -22,12 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} p-5 py-[100px]`}>
+      <body className={`p-5 py-[50px]`}>
         <TabNavigation />
         <div className='flex-center'>
-          <div className='flex-center w-[550px]'>
-            {children}
-          </div>
+          {children}
         </div>
       </body>
     </html>

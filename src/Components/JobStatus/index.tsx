@@ -12,7 +12,7 @@ const JobStatus = () => {
   return (
     <div className={styles.wrapper}>
       <RiRadioButtonLine className={styles.online} />
-      <span className='font-mono'>{status}</span>
+      <span className='font-verdana'>{status}</span>
     </div>
   )
 }

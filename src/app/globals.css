@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,400&family=Poppins:wght@500&display=swap');
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,17 +18,15 @@
   }
 }
 
-* {
-  font-family: 'Imbue', serif;
-  font-family: 'Poppins', sans-serif;
+.wrapper {
+  max-width: 550px;
 }
 
 span,
 p {
-  font-family: Verdana !important;
   font-size: 15px;
-  color: #5e5e5e;
-  /* text-align: justify; */
+  color: #504f4f;
+  text-align: justify;
 }
 
 body {
