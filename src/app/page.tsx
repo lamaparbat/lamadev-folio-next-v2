@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <>
-      <JobStatus />
+      <div className='w-full'><JobStatus /></div>
       <div className='intro mt-10 mb-8'>
         <motion.h1 className='text-5xl font-bold' variants={slideUp} initial="start" animate="slideUp" exit="end">Hey, I’m Parbat</motion.h1>
         <motion.div className='flex mt-4 mb-8' variants={slideUp} initial="start" animate="slideUp" exit="end">

@@ -7,7 +7,7 @@ export const JOB_STATUS: string[] = ["Available for open source contributor.", "
 
 // styles
 export const styles = {
-  wrapper: "flex items-center text-lg",
+  wrapper: "flex text-lg",
   online: "mr-4 text-2xl text-green-500"
 };
 
