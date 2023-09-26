@@ -1,3 +1,4 @@
+
 import './globals.css';
 import 'react-tooltip/dist/react-tooltip.css';
 
@@ -16,6 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={`p-5 py-[50px]`}>

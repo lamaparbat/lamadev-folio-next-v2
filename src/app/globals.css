@@ -40,6 +40,12 @@ body {
   align-items: center;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .active {
   background-color: black;
   color: #ffffff;

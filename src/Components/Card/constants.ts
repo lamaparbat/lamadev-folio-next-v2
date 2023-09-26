@@ -2,7 +2,7 @@
 
 // styles
 export const styles = {
-  card: "p-2 bg-white h-fit w-[270px] border-color card-shadow rounded-md cursor-pointer",
+  card: "p-2 bg-white h-fit w-full sm:w-[270px] border-color card-shadow rounded-md cursor-pointer",
   title: "text-[14px] mt-2",
   sub_title: "text-[12px] -mt-[3px]",
   para: "mt-2 text-[12px]",
