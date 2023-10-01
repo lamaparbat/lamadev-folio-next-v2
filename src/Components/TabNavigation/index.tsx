@@ -17,9 +17,11 @@ const TabNavigation = () => {
   return (
     <>
       <div className={styles.badgeWrapper}>
-        <JobStatus />
-        <div className={styles.badge} onClick={handleOpenTabNavigation}>
-          <BiMenu className={styles.menuIconSIze} />
+        <div className={styles.badgeWrapperChild}>
+          <JobStatus />
+          <div className={styles.badge} onClick={handleOpenTabNavigation}>
+            <BiMenu className={styles.menuIconSIze} />
+          </div>
         </div>
       </div>
 

@@ -27,6 +27,7 @@ export const styles = {
   lgScreen: 'invisible sm:visible',
   smScreen: 'visible backdrop-blur-[5px] bg-[#f8f8f800] bg-opacity-1 sm:backdrop-blur-none sm:bg-unset',
   badge: 'badge-circular bg-slate-100 block sm:hidden cursor-pointer',
-  badgeWrapper: "w-full sm:w-[550px] flex-between",
+  badgeWrapper: "w-full flex-center",
+  badgeWrapperChild: "w-full sm:w-[550px] flex-between",
   menuIconSIze: 'text-2xl'
 }
