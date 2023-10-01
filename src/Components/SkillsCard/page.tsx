@@ -29,7 +29,7 @@ const SkillsCard = ({
                         <div className="mt-3">
                             {
                                 items?.map((d, i) => (
-                                    <div className="flex-between mb-2">
+                                    <div className="flex-between mb-2" key={i}>
                                         <span>{d?.name}</span>
                                         {d?.Icon}
                                     </div>
