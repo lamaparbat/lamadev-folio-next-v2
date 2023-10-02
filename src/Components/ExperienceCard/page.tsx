@@ -16,7 +16,7 @@ const ExperienceCard = ({
     jobType
 }: ExperienceCardProps) => {
     return (
-        <div className="w-full flex-between mb-5">
+        <div className="experience_card w-full flex-between mb-5 animateOff">
             <div className='h-[70px] w-[100px] flex justify-center items-center bg-white rounded border-r-2 border-green-500 hidden sm:flex'>
                 <img
                     src={logo}

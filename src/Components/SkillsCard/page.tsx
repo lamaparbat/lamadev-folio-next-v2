@@ -16,7 +16,7 @@ const SkillsCard = ({
     }
 
     return (
-        <div className="h-fit w-full sm:w-[47%] bg-white p-3 rounded-md shadow-inner mb-2">
+        <div className="skill_card h-fit w-full sm:w-[47%] bg-white p-3 rounded-md shadow-inner mb-2 animateOff">
             <div className="flex-between cursor-pointer" onClick={handleOpenUiUxBoxOpen}>
                 <h4>{title}</h4>
                 <BsChevronDown />

@@ -5,5 +5,5 @@ export const pageStyles = {
   divider: 'divider',
   feed_child1: 'flex-between',
   feed_child1_searchIcon: "text-lg cursor-pointer",
-  feed_child2: 'my-5 flex flex-wrap justify-center sm:justify-between'
+  feed_child2: 'my-5 flex flex-wrap justify-center sm:justify-between '
 }

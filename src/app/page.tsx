@@ -17,7 +17,6 @@ export default function Home() {
   useEffect(() => {
     const observers = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry.target.children)
         if (entry.isIntersecting) {
           entry.target.classList.remove('animateOff');
           entry.target.classList.add('animateOn');
@@ -52,7 +51,7 @@ export default function Home() {
 
       <div className={pageStyles.divider}></div>
 
-      <div className='animateOff'>
+      <>
         <div className={pageStyles.feed_child1}>
           <h6>Academic Qualification</h6>
           <HiAcademicCap className={pageStyles.feed_child1_searchIcon} />
@@ -63,25 +62,28 @@ export default function Home() {
             collegeName="Herald College Kathmandu (HCK)"
             courseName="BSc (Hons) Computer Science (BIT)"
             courseDuration="2021 - 2023"
+            key={1}
           />
           <AcademicCard
             logo="/images/uniglobe.png"
             collegeName="Uniglobe SS/College"
             courseName="Higher Secondary School (+2) "
             courseDuration="2019 - 2020"
+            key={2}
           />
           <AcademicCard
             logo={<LiaSchoolSolid className='text-5xl text-green-900' />}
             collegeName="Herald College Kathmandu (HCK)"
             courseName="BSc (Hons) Computer Science (BIT)"
             courseDuration="2005 - 2018"
+            key={3}
           />
         </div>
-      </div>
+      </>
 
       <div className={pageStyles.divider}></div>
 
-      <div className='animateOff'>
+      <>
         <div className={pageStyles.feed_child1}>
           <h6>Work Experience</h6>
           <MdWorkspacePremium className={pageStyles.feed_child1_searchIcon} />
@@ -115,7 +117,7 @@ export default function Home() {
             workingHours="Part"
           />
         </div>
-      </div>
+      </>
 
       <div className={pageStyles.divider}></div>
 
@@ -134,7 +136,7 @@ export default function Home() {
 
       <div className={pageStyles.divider}></div>
 
-      <div className='animateOff'>
+      <>
         <div className={pageStyles.feed_child1}>
           <h6>My Feed</h6>
           <LuSearch className={pageStyles.feed_child1_searchIcon} />
@@ -169,7 +171,7 @@ export default function Home() {
             id={3}
           />
         </div>
-      </div>
+      </>
 
     </div>
   )
