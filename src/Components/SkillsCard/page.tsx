@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react';
 import { BsChevronDown } from 'react-icons/bs';
-import { LuFigma } from 'react-icons/lu';
-import { SiAdobeaftereffects } from 'react-icons/si';
 import { SkillsCardProps } from './types';
 
 const SkillsCard = ({

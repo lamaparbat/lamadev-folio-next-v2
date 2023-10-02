@@ -1,5 +1,19 @@
 import { LuFigma } from "react-icons/lu";
-import { SiAdobeaftereffects, SiReact, SiTailwindcss, SiSass, SiBootstrap } from "react-icons/si";
+import {
+    SiAdobeaftereffects, 
+    SiReact, 
+    SiTailwindcss, 
+    SiSass, 
+    SiBootstrap, 
+    SiNodedotjs, 
+    SiExpress, 
+    SiPhp, 
+    SiSocketdotio, 
+    SiFirebase,
+    SiMongodb,
+    SiMysql,
+    SiPostgresql
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 export const Skills = {
@@ -15,14 +29,16 @@ export const Skills = {
         { name: 'Bootstrap', Icon: <SiBootstrap /> }
     ],
     backend: [
-        { name: 'Node.js', Icon: <LuFigma /> },
-        { name: 'Express.js', Icon: <SiAdobeaftereffects /> },
-        { name: 'Firebase', Icon: <LuFigma /> },
-        { name: 'Express.js', Icon: <SiAdobeaftereffects /> },
+        { name: 'Node.js', Icon: <SiNodedotjs /> },
+        { name: 'Express.js', Icon: <SiExpress /> },
+        { name: 'Hapi.js', Icon: <SiNodedotjs /> },
+        { name: 'Core PHP', Icon: <SiPhp /> },
+        { name: 'Socket.io', Icon: <SiSocketdotio /> },
+        { name: 'Firebase', Icon: <SiFirebase /> },
     ],
     database: [
-        { name: 'Mongodb', Icon: <LuFigma /> },
-        { name: 'Mysql', Icon: <SiAdobeaftereffects /> },
-        { name: 'Sequelize', Icon: <LuFigma /> },
+        { name: 'Mongodb', Icon: <SiMongodb /> },
+        { name: 'Mysql', Icon: <SiMysql /> },
+        { name: 'Sequelize', Icon: <SiPostgresql /> },
     ]
 }
