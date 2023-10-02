@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import { LuSearch } from 'react-icons/lu';
 import { HiAcademicCap } from 'react-icons/hi';
 import { MdWorkspacePremium } from 'react-icons/md';
+import { LiaSchoolSolid } from 'react-icons/lia';
 
 import Card from '@/Components/Card';
 import { slideUp, zoomIn, pageStyles } from '@/Constants';
@@ -46,7 +48,7 @@ export default function Home() {
             courseDuration="2019 - 2020"
           />
           <AcademicCard
-            logo="/images/kalpavriksha.jpg"
+            logo={<LiaSchoolSolid className='text-5xl text-green-900' />}
             collegeName="Herald College Kathmandu (HCK)"
             courseName="BSc (Hons) Computer Science (BIT)"
             courseDuration="2005 - 2018"
@@ -99,7 +101,7 @@ export default function Home() {
           <h6>Skills And Knowledge</h6>
           <MdWorkspacePremium className={pageStyles.feed_child1_searchIcon} />
         </div>
-        <div className={`${pageStyles.feed_child2} flex-between flex-wrap`}>
+        <div className={`${pageStyles.feed_child2} flex flex-wrap`}>
           <SkillsCard title="UI/UX" items={Skills.uiux} />
           <SkillsCard title="Frontend" items={Skills.frontend} />
           <SkillsCard title="Backend" items={Skills.backend} />

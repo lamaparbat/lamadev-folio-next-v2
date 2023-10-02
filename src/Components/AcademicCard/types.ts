@@ -1,5 +1,5 @@
 export interface AcademicCardProps {
-    logo: string,
+    logo: string | object,
     collegeName: string,
     courseName: string,
     courseDuration: string

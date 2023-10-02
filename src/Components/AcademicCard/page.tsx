@@ -1,6 +1,5 @@
 
 
-import Image from 'next/image';
 import React from 'react';
 import { AcademicCardProps } from './types';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -13,13 +12,14 @@ const AcademicCard = ({
 }: AcademicCardProps) => {
     return (
         <div className="w-full flex-between mb-5">
-            <Image
-                src={logo}
-                alt=""
-                height={70}
-                width={70}
-                className="rounded hidden sm:block"
-            />
+            <div className='h-[70px] w-[100px] flex justify-center items-center bg-white rounded border-r-2 border-green-500 hidden sm:flex'>
+                { typeof logo === 'string' ? 
+                    <img
+                        src={logo}
+                        alt=""
+                    /> : <>{logo}</>
+                }
+            </div>
             <div className="sm:mx-5 w-full">
                 <div className="flex-between flex-wrap">
                     <span className="text-lg text-black">{collegeName}</span>
