@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <div className={pageStyles.wrapper}>
       <div className={pageStyles.title}>
-        <motion.h1 className='text-[2.5rem] sm:text-[2.8rem] font-bold' variants={slideUp} initial="start" animate="slideUp" exit="end">Hey, I’m Parbat</motion.h1>
+        <motion.h1 className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold' variants={slideUp} initial="start" animate="slideUp" exit="end">Hey, I’m Parbat</motion.h1>
         <motion.div className='flex mb-2' variants={slideUp} initial="start" animate="slideUp" exit="end">
-          <h1 className='text-[2.5rem] sm:text-[2.8rem] font-bold'>a</h1>
-          <h1 className='ml-4 text-[2.5rem] sm:text-[2.8rem] text-muted font-bold'>Fullstack Developer.</h1>
+          <h1 className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>a</h1>
+          <h1 className='ml-4 text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] text-muted font-bold'>Fullstack Developer.</h1>
         </motion.div>
         <motion.p variants={zoomIn} initial="start" animate="zoomIn" exit="end"> Namaste! I'm Parbat Lama, a Fullstack Web Developer hailing from the vibrant landscapes of Nepal. With a blend of Himalayan inspiration and a passion for coding, I craft digital wonders that bridge cultures and connect people worldwide. Explore my portfolio to witness how technology meets the spirit of Nepal in every line of code.</motion.p>
       </div>

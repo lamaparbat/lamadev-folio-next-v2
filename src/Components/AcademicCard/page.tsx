@@ -18,9 +18,9 @@ const AcademicCard = ({
                 alt=""
                 height={70}
                 width={70}
-                className="rounded"
+                className="rounded hidden sm:block"
             />
-            <div className="mx-5 w-full">
+            <div className="sm:mx-5 w-full">
                 <div className="flex-between flex-wrap">
                     <span className="text-lg text-black">{collegeName}</span>
                     <HiOutlineExternalLink className='-mt-2 cursor-pointer hover:text-red-500' />
