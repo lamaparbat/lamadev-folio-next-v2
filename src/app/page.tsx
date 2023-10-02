@@ -1,35 +1,58 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 import { LuSearch } from 'react-icons/lu';
 import { HiAcademicCap } from 'react-icons/hi';
 import { MdWorkspacePremium } from 'react-icons/md';
 import { LiaSchoolSolid } from 'react-icons/lia';
 
 import Card from '@/Components/Card';
-import { slideUp, zoomIn, pageStyles } from '@/Constants';
+import { pageStyles } from '@/Constants';
 import AcademicCard from "@/Components/AcademicCard/page";
 import ExperienceCard from "@/Components/ExperienceCard/page";
 import SkillsCard from "@/Components/SkillsCard/page";
 import { Skills } from "@/Components/SkillsCard/constant";
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    const observers = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry.target.children)
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('animateOff');
+          entry.target.classList.add('animateOn');
+        } else {
+          entry.target.classList.add('animateOff');
+          entry.target.classList.remove('animateOn');
+        }
+      });
+    })
+
+    const blocks = document.querySelectorAll('.animateOff');
+
+    blocks.forEach((ele) => observers.observe(ele));
+  }, []);
+
 
   return (
     <div className={pageStyles.wrapper}>
+      <img
+        src="/images/parbat.png"
+        className='mt-10 w-full sm:w-[80%] rounded-b-full animateOff'
+        alt='profile'
+      />
       <div className={pageStyles.title}>
-        <motion.h1 className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold' variants={slideUp} initial="start" animate="slideUp" exit="end">Hey, I’m Parbat</motion.h1>
-        <motion.div className='flex mb-2' variants={slideUp} initial="start" animate="slideUp" exit="end">
+        <h1 className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>Hey, I’m Parbat</h1>
+        <div className='flex mb-2'>
           <h1 className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>a</h1>
           <h1 className='ml-4 text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] text-muted font-bold'>Fullstack Developer.</h1>
-        </motion.div>
-        <motion.p variants={zoomIn} initial="start" animate="zoomIn" exit="end"> Namaste! I'm Parbat Lama, a Fullstack Web Developer hailing from the vibrant landscapes of Nepal. With a blend of Himalayan inspiration and a passion for coding, I craft digital wonders that bridge cultures and connect people worldwide. Explore my portfolio to witness how technology meets the spirit of Nepal in every line of code.</motion.p>
+        </div>
+        <p> Namaste! I'm Parbat Lama, a Fullstack Web Developer hailing from the vibrant landscapes of Nepal. With a blend of Himalayan inspiration and a passion for coding, I craft digital wonders that bridge cultures and connect people worldwide. Explore my portfolio to witness how technology meets the spirit of Nepal in every line of code.</p>
       </div>
 
       <div className={pageStyles.divider}></div>
 
-      <>
+      <div className='animateOff'>
         <div className={pageStyles.feed_child1}>
           <h6>Academic Qualification</h6>
           <HiAcademicCap className={pageStyles.feed_child1_searchIcon} />
@@ -54,11 +77,11 @@ export default function Home() {
             courseDuration="2005 - 2018"
           />
         </div>
-      </>
+      </div>
 
       <div className={pageStyles.divider}></div>
 
-      <>
+      <div className='animateOff'>
         <div className={pageStyles.feed_child1}>
           <h6>Work Experience</h6>
           <MdWorkspacePremium className={pageStyles.feed_child1_searchIcon} />
@@ -92,11 +115,11 @@ export default function Home() {
             workingHours="Part"
           />
         </div>
-      </>
+      </div>
 
       <div className={pageStyles.divider}></div>
 
-      <>
+      <div className='animateOff'>
         <div className={pageStyles.feed_child1}>
           <h6>Skills And Knowledge</h6>
           <MdWorkspacePremium className={pageStyles.feed_child1_searchIcon} />
@@ -107,11 +130,11 @@ export default function Home() {
           <SkillsCard title="Backend" items={Skills.backend} />
           <SkillsCard title="Database" items={Skills.database} />
         </div>
-      </>
+      </div>
 
       <div className={pageStyles.divider}></div>
 
-      <>
+      <div className='animateOff'>
         <div className={pageStyles.feed_child1}>
           <h6>My Feed</h6>
           <LuSearch className={pageStyles.feed_child1_searchIcon} />
@@ -146,7 +169,7 @@ export default function Home() {
             id={3}
           />
         </div>
-      </>
+      </div>
 
     </div>
   )

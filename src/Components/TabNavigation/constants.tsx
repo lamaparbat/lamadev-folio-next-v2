@@ -25,7 +25,7 @@ export const styles = {
   nav_button: "p-4 rounded-full hover:bg-slate-300 ease-in-out duration-500 cursor:pointer",
   tooltip: "ml-4 rounded-r-xl",
   badge: 'badge-circular bg-slate-100 block sm:hidden cursor-pointer',
-  badgeWrapper: "w-full flex-center",
+  badgeWrapper: "w-full flex-center animateOff",
   badgeWrapperChild: "w-full sm:w-[550px] flex-between",
   menuIconSIze: 'text-2xl'
 }

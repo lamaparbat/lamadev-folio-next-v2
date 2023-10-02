@@ -10,6 +10,7 @@ const AcademicCard = ({
     courseName,
     courseDuration
 }: AcademicCardProps) => {
+
     return (
         <div className="w-full flex-between mb-5">
             <div className='h-[70px] w-[100px] flex justify-center items-center bg-white rounded border-r-2 border-green-500 hidden sm:flex'>

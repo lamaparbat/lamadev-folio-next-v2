@@ -5,6 +5,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import type { Metadata } from 'next';
 
 import TabNavigation from '@/Components/TabNavigation';
+import ContextWrapper from '@/Components/ContextWrapper';
 
 export const metadata: Metadata = {
   title: 'Lama Dev',
@@ -21,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`p-5 py-[50px]`}>
-        <TabNavigation />
-        <div className='flex-center'>
-          {children}
-        </div>
+          <TabNavigation />
+          <div className='flex-center'>
+            <ContextWrapper props={children} />
+          </div>
       </body>
     </html>
   )
