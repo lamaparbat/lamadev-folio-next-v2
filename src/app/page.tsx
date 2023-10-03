@@ -81,7 +81,7 @@ export default function Home() {
           <HiAcademicCap className={pageStyles.feed_child1_searchIcon} />
         </div>
         <div className={`${pageStyles.feed_child2} flex flex-wrap`}>
-          <div className='verticalLineWrapper'>
+          <div className='verticalLineWrapper invisible sm:visible'>
             <div className='verticalLine'></div>
             <GiSandsOfTime id='start1' className='bg-green-700 text-white p-1 text-3xl animate-spin text-green-700 rounded-ful rotate-180 rounded-full' />
             <AiFillCheckCircle id='stop1' className='hidden text-3xl text-green-700 rounded-ful stop1' />
