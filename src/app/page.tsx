@@ -37,7 +37,7 @@ export default function Home() {
               height += 10;
               if(dom) dom.style.height = `${height}px`;
               
-              if(height > 210) {
+              if(height > 215) {
                 start1.style.display = 'none';
                 stop1.style.display = 'flex';
                 clearInterval(interval);
