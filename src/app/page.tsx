@@ -4,6 +4,8 @@ import { LuSearch } from 'react-icons/lu';
 import { HiAcademicCap } from 'react-icons/hi';
 import { MdWorkspacePremium } from 'react-icons/md';
 import { LiaSchoolSolid } from 'react-icons/lia';
+import { AiFillCheckCircle } from 'react-icons/ai';
+import { GiSandsOfTime } from 'react-icons/gi';
 
 import Card from '@/Components/Card';
 import { pageStyles } from '@/Constants';
@@ -14,12 +16,34 @@ import { Skills } from "@/Components/SkillsCard/constant";
 import { useEffect } from 'react';
 
 export default function Home() {
+
   useEffect(() => {
     const observers = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.remove('animateOff');
           entry.target.classList.add('animateOn');
+
+          if(entry.target.className.includes('academic_card')) {
+            const dom:any = document.querySelector(".verticalLineWrapper .verticalLine");
+            const start1:any = document.getElementById("start1");
+            const stop1:any = document.getElementById("stop1");
+
+            start1.style.display = 'flex';
+            stop1.style.display = 'none';
+            let height = 10;
+
+            const interval = setInterval(() => {
+              height += 10;
+              if(dom) dom.style.height = `${height}px`;
+              
+              if(height > 210) {
+                start1.style.display = 'none';
+                stop1.style.display = 'flex';
+                clearInterval(interval);
+              }
+            }, 100);
+          }
         } else {
           entry.target.classList.add('animateOff');
           entry.target.classList.remove('animateOn');
@@ -56,7 +80,12 @@ export default function Home() {
           <h6>Academic Qualification</h6>
           <HiAcademicCap className={pageStyles.feed_child1_searchIcon} />
         </div>
-        <div className={`${pageStyles.feed_child2} flex-between flex-wrap`}>
+        <div className={`${pageStyles.feed_child2} flex flex-wrap`}>
+          <div className='verticalLineWrapper'>
+            <div className='verticalLine'></div>
+            <GiSandsOfTime id='start1' className='bg-green-700 text-white p-1 text-3xl animate-spin text-green-700 rounded-ful rotate-180 rounded-full' />
+            <AiFillCheckCircle id='stop1' className='hidden text-3xl text-green-700 rounded-ful stop1' />
+          </div>
           <AcademicCard
             logo="/images/herald.png"
             collegeName="Herald College Kathmandu (HCK)"

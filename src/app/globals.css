@@ -92,19 +92,19 @@ body {
 .animateOff {
   opacity: 0;
   filter: blur(1px);
-  transform: translateX(-50%);
+  transform: translateX(-5%);
   transition: ease-out 1s;
 }
 
-.academic_card:nth-child(1) {
+.academic_card:nth-child(2) {
   transition-delay: 100ms;
 }
 
-.academic_card:nth-child(2) {
+.academic_card:nth-child(3) {
   transition-delay: 300ms;
 }
 
-.academic_card:nth-child(3) {
+.academic_card:nth-child(4) {
   transition-delay: 600ms;
 }
 
@@ -142,4 +142,20 @@ body {
 
 .feed_card:nth-child(3) {
   transition-delay: 600ms;
+}
+
+
+.verticalLineWrapper {
+  margin-left: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verticalLine{
+  width: 3px;
+  background-color: rgb(67, 133, 67);
+  transition: height 0.5s ease-in-out;
 }
