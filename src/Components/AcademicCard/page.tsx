@@ -12,7 +12,7 @@ const AcademicCard = ({
 }: AcademicCardProps) => {
 
     return (
-        <div className='sm:ml-[60px] academic_card animateOff w-full flex-between mb-5 shadow-lg'>
+        <div className='sm:ml-[60px] academic_card animateOff w-full flex-between mb-5 sm:shadow-lg'>
             <div className='h-[70px] w-[100px] flex justify-center items-center bg-white rounded border-r-2 border-green-500 hidden sm:flex'>
                 {typeof logo === 'string' ?
                     <img
