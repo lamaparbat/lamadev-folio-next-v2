@@ -24,7 +24,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, id }) => {
         <p className={styles.para}>{description}</p>
         <div className={styles.imgContainer}>
           <Image
-            src="/images/test.png"
+            src={image}
             alt=""
             height={200}
             width={300}

@@ -1,6 +1,5 @@
 export const pageStyles = {
   wrapper: 'wrapper',
-  jobWrapper: 'sm:w-full',
   title: 'mt-9 mb-8 animateOff',
   divider: 'divider',
   feed_child1: 'flex-between',

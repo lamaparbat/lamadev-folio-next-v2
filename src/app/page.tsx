@@ -14,6 +14,7 @@ import ExperienceCard from "@/Components/ExperienceCard/page";
 import SkillsCard from "@/Components/SkillsCard/page";
 import { Skills } from "@/Components/SkillsCard/constant";
 import { useEffect } from 'react';
+import ProjectFeed from './projects/page';
 
 export default function Home() {
 
@@ -24,10 +25,10 @@ export default function Home() {
           entry.target.classList.remove('animateOff');
           entry.target.classList.add('animateOn');
 
-          if(entry.target.className.includes('academic_card')) {
-            const dom:any = document.querySelector(".verticalLineWrapper .verticalLine");
-            const start1:any = document.getElementById("start1");
-            const stop1:any = document.getElementById("stop1");
+          if (entry.target.className.includes('academic_card')) {
+            const dom: any = document.querySelector(".verticalLineWrapper .verticalLine");
+            const start1: any = document.getElementById("start1");
+            const stop1: any = document.getElementById("stop1");
 
             start1.style.display = 'flex';
             stop1.style.display = 'none';
@@ -35,9 +36,9 @@ export default function Home() {
 
             const interval = setInterval(() => {
               height += 10;
-              if(dom) dom.style.height = `${height}px`;
-              
-              if(height > 215) {
+              if (dom) dom.style.height = `${height}px`;
+
+              if (height > 215) {
                 start1.style.display = 'none';
                 stop1.style.display = 'flex';
                 clearInterval(interval);
@@ -165,42 +166,7 @@ export default function Home() {
 
       <div className={pageStyles.divider}></div>
 
-      <>
-        <div className={pageStyles.feed_child1}>
-          <h6>My Feed</h6>
-          <LuSearch className={pageStyles.feed_child1_searchIcon} />
-        </div>
-        <div className={pageStyles.feed_child2}>
-          <Card
-            title="Clothing Brand Site"
-            description="This site is an ecommerce clothing brand distributors"
-            image=""
-            link={{ siteLink: "" }}
-            id={0}
-          />
-          <Card
-            title="Clothing Brand Site"
-            description="This site is an ecommerce clothing brand distributors"
-            image=""
-            link={{ siteLink: "" }}
-            id={1}
-          />
-          <Card
-            title="Clothing Brand Site"
-            description="This site is an ecommerce clothing brand distributors"
-            image=""
-            link={{ siteLink: "" }}
-            id={2}
-          />
-          <Card
-            title="Clothing Brand Site"
-            description="This site is an ecommerce clothing brand distributors"
-            image=""
-            link={{ siteLink: "" }}
-            id={3}
-          />
-        </div>
-      </>
+      <ProjectFeed />
 
     </div>
   )

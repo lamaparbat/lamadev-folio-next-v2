@@ -154,7 +154,7 @@ body {
   align-items: center;
 }
 
-.verticalLine{
+.verticalLine {
   width: 3px;
   background-color: rgb(67, 133, 67);
   transition: height 0.5s ease-in-out;
