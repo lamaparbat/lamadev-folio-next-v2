@@ -84,64 +84,62 @@ body {
 
 .animateOn {
   opacity: 1;
-  filter: blur(0px);
   transform: translateX(0%);
-  transition: ease-in 1s;
+  transition: ease-in 0.5s;
 }
 
 .animateOff {
   opacity: 0;
-  filter: blur(1px);
   transform: translateX(-5%);
-  transition: ease-out 1s;
+  transition: ease-out 0.5s;
 }
 
 .academic_card:nth-child(2) {
-  transition-delay: 100ms;
+  transition-delay: 50ms;
 }
 
 .academic_card:nth-child(3) {
-  transition-delay: 300ms;
+  transition-delay: 150ms;
 }
 
 .academic_card:nth-child(4) {
-  transition-delay: 600ms;
+  transition-delay: 300ms;
 }
 
 .experience_card:nth-child(1) {
-  transition-delay: 100ms;
+  transition-delay: 50ms;
 }
 
 .experience_card:nth-child(2) {
-  transition-delay: 300ms;
+  transition-delay: 100ms;
 }
 
 .experience_card:nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 150ms;
 }
 
 .skill_card:nth-child(1) {
-  transition-delay: 100ms;
+  transition-delay: 50ms;
 }
 
 .skill_card:nth-child(2) {
-  transition-delay: 300ms;
-}
-
-.skill_card:nth-child(3) {
-  transition-delay: 600ms;
-}
-
-.feed_card:nth-child(1) {
   transition-delay: 100ms;
 }
 
+.skill_card:nth-child(3) {
+  transition-delay: 150ms;
+}
+
+.feed_card:nth-child(1) {
+  transition-delay: 50ms;
+}
+
 .feed_card:nth-child(2) {
-  transition-delay: 300ms;
+  transition-delay: 100ms;
 }
 
 .feed_card:nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 150ms;
 }
 
 
