@@ -1,13 +1,11 @@
 "use client";
 
-import { LuSearch } from 'react-icons/lu';
 import { HiAcademicCap } from 'react-icons/hi';
 import { MdWorkspacePremium } from 'react-icons/md';
 import { LiaSchoolSolid } from 'react-icons/lia';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { GiSandsOfTime } from 'react-icons/gi';
 
-import Card from '@/Components/Card';
 import { pageStyles } from '@/Constants';
 import AcademicCard from "@/Components/AcademicCard/page";
 import ExperienceCard from "@/Components/ExperienceCard/page";
@@ -43,7 +41,7 @@ export default function Home() {
                 stop1.style.display = 'flex';
                 clearInterval(interval);
               }
-            }, 100);
+            }, 50);
           }
         } else {
           entry.target.classList.add('animateOff');
