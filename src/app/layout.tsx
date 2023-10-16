@@ -7,7 +7,6 @@ import { Analytics } from '@vercel/analytics/react';
 
 import TabNavigation from '@/Components/TabNavigation';
 import ContextWrapper from '@/Components/ContextWrapper';
-import JobStatus from '@/Components/JobStatus';
 
 export const metadata: Metadata = {
   title: 'Lama Dev',
@@ -27,7 +26,6 @@ export default function RootLayout({
         <Analytics />
         <TabNavigation />
         <div className='flex-center w-'>
-          {/* <JobStatus /> */}
           <ContextWrapper props={children} />
         </div>
       </body>

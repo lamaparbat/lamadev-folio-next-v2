@@ -16,6 +16,7 @@ import SkillsCard from "@/Components/SkillsCard/page";
 import { Skills } from "@/Components/SkillsCard/constant";
 import ProjectFeed from './projects/page';
 import Subheader from '@/Components/Subheader/page';
+import JobStatus from '@/Components/JobStatus';
 
 export default function Home() {
 
@@ -62,10 +63,11 @@ export default function Home() {
     <div className={pageStyles.wrapper}>
       <img
         src="/images/parbat.png"
-        className='mt-5 w-full sm:w-[75%] rounded-b-full animateOff'
+        className='w-full sm:w-[70%] rounded-b-full animateOff'
         alt='profile'
       />
       <div className={pageStyles.title}>
+        <JobStatus />
         <label className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>Hey, I’m Parbat.</label>
         <div>
           <TypeAnimation
