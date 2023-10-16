@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
+import { TypeAnimation } from 'react-type-animation';
 import { HiAcademicCap } from 'react-icons/hi';
 import { MdWorkspacePremium } from 'react-icons/md';
 import { LiaSchoolSolid } from 'react-icons/lia';
@@ -57,21 +58,43 @@ export default function Home() {
     blocks.forEach((ele) => observers.observe(ele));
   }, []);
 
-
   return (
     <div className={pageStyles.wrapper}>
       <img
         src="/images/parbat.png"
-        className='mt-10 w-full sm:w-[80%] rounded-b-full animateOff'
+        className='mt-5 w-full sm:w-[75%] rounded-b-full animateOff'
         alt='profile'
       />
       <div className={pageStyles.title}>
-        <label className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>Hey, I’m Parbat</label>
-        <div className='flex mb-2'>
-          <label className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>a</label>
-          <label className='ml-4 text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] text-muted font-bold'>Fullstack Developer.</label>
+        <label className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>Hey, I’m Parbat.</label>
+        <div>
+          <TypeAnimation
+            sequence={[
+              'A Web Designer.', 1000, () => {},
+              'A Frontend Developer.', 1000, () => {},
+              'A Backend Developer.', 1000, () => {},
+              'A System Design Enthusiast.', 1000, () => {},
+              ''
+            ]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            className=' mb-5 text-3xl font-medium text-green-700'
+            style={{ display: 'inline-block' }}
+          />
         </div>
-        <p> Namaste! I'm Parbat Lama, a Fullstack Web Developer hailing from the vibrant landscapes of Nepal. With a blend of Himalayan inspiration and a passion for coding, I craft digital wonders that bridge cultures and connect people worldwide. Explore my portfolio to witness how technology meets the spirit of Nepal in every line of code.</p>
+        <div>
+          <TypeAnimation
+            sequence={[
+              "Namaste! I'm Parbat Lama, a Fullstack Web Developer hailing from the vibrant landscapes of Nepal. With a blend of Himalayan inspiration and a passion for coding, I craft digital wonders that bridge cultures and connect people worldwide. Explore my portfolio to witness how technology meets the spirit of Nepal in every line of code.",
+              1000, () => { },
+            ]}
+            wrapper="p"
+            cursor={true}
+            repeat={0}
+            style={{ display: 'inline-block' }}
+          />
+        </div>
       </div>
 
       <div className={pageStyles.divider}></div>

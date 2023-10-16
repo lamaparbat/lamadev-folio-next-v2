@@ -1,13 +1,9 @@
 'use client';
 
-import { MdOutlineEmail, MdPhone } from 'react-icons/md';
-import { contactStyles } from './constant';
 import React from 'react';
 import { LuFacebook, LuGithub, LuLinkedin, LuMail, LuPhoneCall, LuYoutube } from 'react-icons/lu';
 
 const ProjectFeed = () => {
-
-
   return (
     <div className='wrapper'>
       <h1>Contact Me</h1>
