@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect } from 'react';
+
 import { HiAcademicCap } from 'react-icons/hi';
 import { MdWorkspacePremium } from 'react-icons/md';
 import { LiaSchoolSolid } from 'react-icons/lia';
@@ -11,8 +13,8 @@ import AcademicCard from "@/Components/AcademicCard/page";
 import ExperienceCard from "@/Components/ExperienceCard/page";
 import SkillsCard from "@/Components/SkillsCard/page";
 import { Skills } from "@/Components/SkillsCard/constant";
-import { useEffect } from 'react';
 import ProjectFeed from './projects/page';
+import Subheader from '@/Components/Subheader/page';
 
 export default function Home() {
 
@@ -64,10 +66,10 @@ export default function Home() {
         alt='profile'
       />
       <div className={pageStyles.title}>
-        <h1 className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>Hey, I’m Parbat</h1>
+        <label className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>Hey, I’m Parbat</label>
         <div className='flex mb-2'>
-          <h1 className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>a</h1>
-          <h1 className='ml-4 text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] text-muted font-bold'>Fullstack Developer.</h1>
+          <label className='text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] font-bold'>a</label>
+          <label className='ml-4 text-[2.5rem] max-[460px]:text-[2rem] sm:text-[2.8rem] text-muted font-bold'>Fullstack Developer.</label>
         </div>
         <p> Namaste! I'm Parbat Lama, a Fullstack Web Developer hailing from the vibrant landscapes of Nepal. With a blend of Himalayan inspiration and a passion for coding, I craft digital wonders that bridge cultures and connect people worldwide. Explore my portfolio to witness how technology meets the spirit of Nepal in every line of code.</p>
       </div>
@@ -75,10 +77,7 @@ export default function Home() {
       <div className={pageStyles.divider}></div>
 
       <>
-        <div className={pageStyles.feed_child1}>
-          <h6>Academic Qualification</h6>
-          <HiAcademicCap className={pageStyles.feed_child1_searchIcon} />
-        </div>
+        <Subheader title='Academic Qualification' icon={<HiAcademicCap />} />
         <div className={`${pageStyles.feed_child2} flex flex-wrap`}>
           <div className='verticalLineWrapper invisible sm:visible'>
             <div className='verticalLine'></div>
@@ -101,8 +100,8 @@ export default function Home() {
           />
           <AcademicCard
             logo={<LiaSchoolSolid className='text-5xl text-green-900' />}
-            collegeName="Herald College Kathmandu (HCK)"
-            courseName="BSc (Hons) Computer Science (BIT)"
+            collegeName="Kalpavriksha Secondary School"
+            courseName="Secondary School"
             courseDuration="2005 - 2018"
             key={3}
           />
@@ -112,10 +111,7 @@ export default function Home() {
       <div className={pageStyles.divider}></div>
 
       <>
-        <div className={pageStyles.feed_child1}>
-          <h6>Work Experience</h6>
-          <MdWorkspacePremium className={pageStyles.feed_child1_searchIcon} />
-        </div>
+        <Subheader title='Work Experience' icon={<MdWorkspacePremium />} />
         <div className={`${pageStyles.feed_child2} flex-between flex-wrap`}>
           <ExperienceCard
             logo="/images/portpro.jpg"
@@ -150,10 +146,7 @@ export default function Home() {
       <div className={pageStyles.divider}></div>
 
       <div className='animateOff'>
-        <div className={pageStyles.feed_child1}>
-          <h6>Skills And Knowledge</h6>
-          <MdWorkspacePremium className={pageStyles.feed_child1_searchIcon} />
-        </div>
+        <Subheader title='Skills And Knowledge' icon={<MdWorkspacePremium />} />
         <div className={`${pageStyles.feed_child2} flex flex-wrap`}>
           <SkillsCard title="UI/UX" items={Skills.uiux} />
           <SkillsCard title="Frontend" items={Skills.frontend} />

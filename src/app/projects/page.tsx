@@ -1,6 +1,7 @@
 'use client';
 
 import Card from '@/Components/Card';
+import Subheader from '@/Components/Subheader/page';
 import { pageStyles } from '@/Constants';
 import React, { useEffect } from 'react';
 import { LuSearch } from 'react-icons/lu';
@@ -27,10 +28,7 @@ const ProjectFeed = () => {
 
   return (
     <div className={pageStyles.wrapper}>
-      <div className={pageStyles.feed_child1}>
-        <h1 className='text-2xl font-bold'>Projects Feed</h1>
-        <LuSearch className={pageStyles.feed_child1_searchIcon} />
-      </div>
+      <Subheader title='Project Feeds' icon={<LuSearch />} />
       <div className={pageStyles.feed_child2}>
         <Card
           title="Blockchain Election System"
