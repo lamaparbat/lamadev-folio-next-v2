@@ -3,7 +3,7 @@
 import { MdOutlineEmail, MdPhone } from 'react-icons/md';
 import { contactStyles } from './constant';
 import React from 'react';
-import { LuFacebook, LuYoutube } from 'react-icons/lu';
+import { LuFacebook, LuGithub, LuLinkedin, LuMail, LuPhoneCall, LuYoutube } from 'react-icons/lu';
 
 const ProjectFeed = () => {
 
@@ -11,10 +11,25 @@ const ProjectFeed = () => {
   return (
     <div className='wrapper'>
       <h1>Contact Me</h1>
-      <p>I look forward to hearing from you. Feel free to use the details below.</p>
-      <div className='bg-white px-5 py-3 mb-2 rounded-md'>
-        <div className='h-[50px] w-[70px] flex-center px-5 py-2 border border-slate-60 rounded'>
-          <LuFacebook className='icon' />
+      <p className='my-5'>I look forward to hearing from you. Feel free to use the details below.</p>
+      <div className='bg-white px-5 py-3 mb-2 rounded-md flex justify-center'>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+          <LuFacebook className='text-2xl' />
+        </div>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+          <LuYoutube className='text-2xl' />
+        </div>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+          <LuLinkedin className='text-2xl' />
+        </div>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+          <LuPhoneCall className='text-2xl' />
+        </div>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+          <LuGithub className='text-2xl' />
+        </div>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+          <LuMail className='text-2xl' />
         </div>
       </div>
       <div className='bg-white px-5 pt-5 pb-10 rounded-md'>
