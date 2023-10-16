@@ -8,23 +8,23 @@ const ProjectFeed = () => {
     <div className='wrapper'>
       <h1>Contact Me</h1>
       <p className='my-5'>I look forward to hearing from you. Feel free to use the details below.</p>
-      <div className='bg-white px-5 py-3 mb-2 rounded-md flex justify-center'>
-        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+      <div className='bg-white px-5 py-3 mb-2 rounded-md flex justify-between flex-wrap gap-1'>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000'>
           <LuFacebook className='text-2xl' />
         </div>
-        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000'>
           <LuYoutube className='text-2xl' />
         </div>
-        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000'>
           <LuLinkedin className='text-2xl' />
         </div>
-        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000'>
           <LuPhoneCall className='text-2xl' />
         </div>
-        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000'>
           <LuGithub className='text-2xl' />
         </div>
-        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000 mx-3'>
+        <div className='h-[50px] w-[75px] flex-center px-5 py-2 rounded shadow-inner hover:shadow-md hover:bg-black cursor-pointer hover:text-white ease-in-out duration-1000'>
           <LuMail className='text-2xl' />
         </div>
       </div>

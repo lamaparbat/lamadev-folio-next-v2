@@ -79,7 +79,7 @@ export default function Home() {
             wrapper="span"
             cursor={true}
             repeat={Infinity}
-            className=' mb-5 text-2xl font-medium text-green-700'
+            className='mb-5 text-2xl font-medium text-green-700'
             style={{ display: 'inline-block' }}
           />
         </div>
