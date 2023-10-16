@@ -3,6 +3,7 @@ import './globals.css';
 import 'react-tooltip/dist/react-tooltip.css';
 
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 import TabNavigation from '@/Components/TabNavigation';
 import ContextWrapper from '@/Components/ContextWrapper';
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`p-5 py-[50px]`}>
+        <Analytics />
         <TabNavigation />
         <div className='flex-center w-'>
           {/* <JobStatus /> */}
