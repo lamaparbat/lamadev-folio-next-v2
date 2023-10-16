@@ -63,7 +63,7 @@ export default function Home() {
     <div className={pageStyles.wrapper}>
       <img
         src="/images/parbat.png"
-        className='w-full sm:w-[70%] rounded-b-full animateOff'
+        className='w-full sm:w-[65%] rounded-b-full animateOff'
         alt='profile'
       />
       <div className={pageStyles.title}>
@@ -72,7 +72,7 @@ export default function Home() {
         <div>
           <TypeAnimation
             sequence={[
-              'A Web Designer.', 1000, () => {},
+              'A UI/UX Designer.', 1000, () => {},
               'A Frontend Developer.', 1000, () => {},
               'A Backend Developer.', 1000, () => {},
               'A System Design Enthusiast.', 1000, () => {},
