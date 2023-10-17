@@ -28,6 +28,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, id }) => {
             alt=""
             height={200}
             width={300}
+            className='hue-rotate-90'
           />
         </div>
       </div>

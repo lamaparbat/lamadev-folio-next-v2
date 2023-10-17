@@ -137,7 +137,6 @@ export default function Home() {
         </>
 
         <div className={pageStyles.divider}></div>
-
         <>
           <Subheader title='Work Experience' icon={<MdWorkspacePremium />} />
           <div className={`${pageStyles.feed_child2} flex-between flex-wrap`}>
@@ -165,8 +164,8 @@ export default function Home() {
               position="Web Developer"
               engagedDuration="Jan 2022 - Dec 2022"
               skills={['React', 'Next.js', 'Redux', 'TensorFlowApis']}
-              jobType="Part-time"
-              workingHours="Part"
+              jobType="Remote"
+              workingHours="Part-time"
             />
           </div>
         </>
