@@ -12,8 +12,8 @@ const AcademicCard = ({
 }: AcademicCardProps) => {
 
     return (
-        <div className='sm:ml-[60px] academic_card animateOff w-full flex-between mb-5 sm:shadow-lg'>
-            <div className='h-[70px] w-[100px] flex justify-center items-center bg-white rounded border-r-2 border-green-500 hidden sm:flex'>
+        <div className='sm:ml-[60px] academic_card animateOff w-full flex-between mb-5 sm:shadow-lg dark:bg-zinc-900 dark:shadow-black'>
+            <div className='h-[70px] w-[100px] flex justify-center items-center  rounded border-r-2 hidden border-green-500 sm:flex overflow-hidden'>
                 {typeof logo === 'string' ?
                     <img
                         src={logo}
@@ -23,12 +23,12 @@ const AcademicCard = ({
             </div>
             <div className="sm:mx-5 w-full">
                 <div className="flex-between flex-wrap">
-                    <span className="text-lg text-black">{collegeName}</span>
+                    <h2 className="text-lg">{collegeName}</h2>
                     <HiOutlineExternalLink className='-mt-2 cursor-pointer hover:text-red-500' />
                 </div>
                 <div className="flex-between flex-wrap">
-                    <span className="text-light">{courseName}</span>
-                    <span className="text-light font-mono sm:mt-1">{courseDuration}</span>
+                    <span className="">{courseName}</span>
+                    <span className="font-mono sm:mt-1">{courseDuration}</span>
                 </div>
             </div>
         </div>

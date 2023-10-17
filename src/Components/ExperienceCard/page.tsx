@@ -17,7 +17,7 @@ const ExperienceCard = ({
 }: ExperienceCardProps) => {
     return (
         <div className="experience_card w-full flex-between mb-5 animateOff">
-            <div className='h-[70px] w-[100px] flex justify-center items-center bg-white rounded border-r-2 border-green-500 hidden sm:flex'>
+            <div className='h-[70px] w-[100px] flex justify-center items-center  rounded border-r-2 border-green-500 hidden sm:flex'>
                 <img
                     src={logo}
                     alt=""
@@ -25,12 +25,12 @@ const ExperienceCard = ({
             </div>
             <div className="mx-0 sm:mx-5 w-full">
                 <div className="flex-between flex-wrap">
-                    <span className="text-lg text-black">{companyName}</span>
+                    <h2 className="text-lg">{companyName}</h2>
                     <HiOutlineExternalLink className='-mt-2 cursor-pointer hover:text-red-500' />
                 </div>
                 <div className="flex-between flex-wrap">
-                    <span className="text-light">{position}</span>
-                    <span className="text-light font-mono sm:mt-1">{engagedDuration}</span>
+                    <span className="">{position}</span>
+                    <span className="font-mono sm:mt-1">{engagedDuration}</span>
                 </div>
                 <div className='flex mt-1'>
                     <div className='flex-between'>

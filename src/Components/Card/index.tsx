@@ -20,7 +20,7 @@ const Card: React.FC<CardType> = ({ title, description, image, link, id }) => {
   return (
     <div>
       <div className={styles.card}>
-        <h5 className={styles.title}>{title}</h5>
+        <h2 className={styles.title}>{title}</h2>
         <p className={styles.para}>{description}</p>
         <div className={styles.imgContainer}>
           <Image

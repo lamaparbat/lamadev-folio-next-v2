@@ -24,7 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`p-5 py-[50px]`}>
         <Analytics />
-        <TabNavigation />
         <div className='flex-center w-'>
           <ContextWrapper props={children} />
         </div>

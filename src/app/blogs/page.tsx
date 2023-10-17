@@ -4,13 +4,17 @@ import React from 'react';
 import { LuSearch } from 'react-icons/lu';
 import blogStyles from './styles';
 import Subheader from '@/Components/Subheader/page';
+import TabNavigation from '@/Components/TabNavigation';
 
 const ProjectFeed = () => {
 
   return (
-    <div className='wrapper flex flex-col'>
-      <Subheader title='Blog Posts' icon={<LuSearch />} />
-    </div>
+    <>
+      <TabNavigation />
+      <div className='wrapper flex flex-col'>
+        <Subheader title='Blog Posts' icon={<LuSearch />} />
+      </div>
+    </>
   )
 }
 

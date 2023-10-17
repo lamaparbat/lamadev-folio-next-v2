@@ -7,12 +7,15 @@ import { Tooltip } from 'react-tooltip';
 import { DEFAULT_TAB_ITEMS, MEDIA_TAB_ITEMS, styles } from './constants';
 import { TAB_ITEMS } from './interface';
 import useTabNavigation from './useTabNavigation';
+
 import { BiMenu } from 'react-icons/bi';
 import { MdOutlineClose } from 'react-icons/md';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 
 const TabNavigation = () => {
-  const { openTabNavigation, activeTabIndex, redirectTo, handleOpenTabNavigation, handleTabChange, getCalculatedMargninY } = useTabNavigation();
+  const { theme, openTabNavigation, activeTabIndex, themeTooltipContent, redirectTo, getCalculatedMargninY, handleChangeTheme, handleOpenTabNavigation, handleTabChange } = useTabNavigation();
+  const lastIndex = DEFAULT_TAB_ITEMS?.length;
 
   return (
     <>
@@ -29,6 +32,14 @@ const TabNavigation = () => {
               )
             })
           }
+          <div
+            className={`${styles.nav_button} ${activeTabIndex === lastIndex && 'active'} mt-2`}
+            onClick={handleChangeTheme}
+            data-tooltip-id="link"
+            data-tooltip-content={themeTooltipContent}
+          >
+            {theme === 'light' ? <FiSun /> : <FiMoon />}
+          </div>
         </div>
         <div className={styles.vertical_navbar}>
           {MEDIA_TAB_ITEMS.map((d: TAB_ITEMS, i: number) => {
@@ -66,6 +77,14 @@ const TabNavigation = () => {
                   )
                 })
               }
+              <div
+                className={`${styles.nav_button} ${activeTabIndex === lastIndex && 'active'} mt-2`}
+                onClick={handleChangeTheme}
+                data-tooltip-id="link"
+                data-tooltip-content={themeTooltipContent}
+              >
+                {theme === 'light' ? <FiSun /> : <FiMoon />}
+              </div>
             </div>
             <div className={styles.vertical_navbar}>
               {MEDIA_TAB_ITEMS.map((d: TAB_ITEMS, i: number) => {

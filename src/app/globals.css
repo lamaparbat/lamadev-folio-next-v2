@@ -3,12 +3,6 @@
 @tailwind utilities;
 
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -28,13 +22,10 @@ h1 {
 span,
 p {
   font-size: 15px;
-  color: #504f4f;
   text-align: justify;
+  @apply dark:text-slate-300;
 }
 
-body {
-  background: #f8f8f8;
-}
 
 .flex-center {
   display: flex;
@@ -50,42 +41,25 @@ body {
 }
 
 .active {
-  background-color: black;
-  color: #ffffff;
-}
-
-.text-muted {
-  color: #b0b0b0;
+  @apply bg-black text-white dark:bg-white dark:text-black;
 }
 
 .divider {
   margin: 20px 0px 20px 0px;
   width: 100%;
-  border: 0.9px solid #ebedf0;
-}
-
-.btn {
-  @apply bg-black text-white rounded p-2 mt-5;
-}
-
-.border-color {
-  border: 0.9px solid #ebedf0;
+  @apply border border-slate-100 dark:border-zinc-900;
 }
 
 .card-shadow {
-  box-shadow: 0px 1px 9px 1px rgba(235, 235, 235, 0.82);
-  -webkit-box-shadow: 0px 1px 9px 1px rgba(235, 235, 235, 0.82);
-  -moz-box-shadow: 0px 1px 9px 1px rgba(235, 235, 235, 0.82);
+  @apply shadow-lg dark:bg-zinc-900 dark:shadow-black;
 }
 
 .badge-circular {
   padding: 10px;
   height: fit-content;
   width: fit-content;
-  box-shadow: 0px 1px 9px 1px rgba(235, 235, 235, 0.82);
-  -webkit-box-shadow: 0px 1px 9px 1px rgba(235, 235, 235, 0.82);
-  -moz-box-shadow: 0px 1px 9px 1px rgba(235, 235, 235, 0.82);
   border-radius: 50px;
+  @apply shadow-lg dark:bg-zinc-900 dark:shadow-black;
 }
 
 
