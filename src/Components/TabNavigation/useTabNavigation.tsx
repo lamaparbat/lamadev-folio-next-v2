@@ -1,6 +1,6 @@
 
 
-import { getTitleCase } from '@/Utility';
+import { getTitleCase } from '@/Lib/utils';
 import { useTheme } from 'next-themes';
 import { useCallback, useState } from 'react';
 
