@@ -7,13 +7,13 @@ import { HiOutlineExternalLink } from 'react-icons/hi';
 const AcademicCard = ({
     logo,
     collegeName,
-    courseName,
+courseName,
     courseDuration
 }: AcademicCardProps) => {
 
     return (
         <div className='sm:ml-[60px] academic_card animateOff w-full flex-between mb-5 sm:shadow-lg dark:bg-zinc-900 dark:shadow-black'>
-            <div className='h-[70px] w-[100px] flex justify-center items-center  rounded border-r-2 hidden border-green-500 sm:flex overflow-hidden'>
+            <div className='h-[70px] w-[100px] flex justify-center items-center  rounded border-r-2 hidden border-green-500 sm:flex overflow-hidden bg-white'>
                 {typeof logo === 'string' ?
                     <img
                         src={logo}

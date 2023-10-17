@@ -84,7 +84,7 @@ export default function Home() {
               wrapper="h2"
               cursor={true}
               repeat={Infinity}
-              className='mb-5 text-2xl font-medium'
+              className='mb-5 text-2xl font-medium text-green-500'
               style={{ display: 'inline-block' }}
             />
           </div>
@@ -109,7 +109,7 @@ export default function Home() {
           <div className={`${pageStyles.feed_child2} flex flex-wrap`}>
             <div className='verticalLineWrapper invisible sm:visible'>
               <div className='verticalLine'></div>
-              <GiSandsOfTime id='start1' className='bg-green-700  p-1 text-3xl animate-spin text-green-700 rounded-ful rotate-180 rounded-full' />
+              <GiSandsOfTime id='start1' className='bg-green-700 text-white dark:text-black p-1 text-3xl animate-spin rounded-ful rotate-180 rounded-full' />
               <AiFillCheckCircle id='stop1' className='hidden text-3xl text-green-700 rounded-ful stop1' />
             </div>
             <AcademicCard
