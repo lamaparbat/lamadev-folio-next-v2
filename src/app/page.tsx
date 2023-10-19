@@ -14,10 +14,11 @@ import AcademicCard from "@/Components/AcademicCard/page";
 import ExperienceCard from "@/Components/ExperienceCard/page";
 import SkillsCard from "@/Components/SkillsCard/page";
 import { Skills } from "@/Components/SkillsCard/constant";
-import ProjectFeed from './projects/page';
 import Subheader from '@/Components/Subheader/page';
 import JobStatus from '@/Components/JobStatus';
 import TabNavigation from '@/Components/TabNavigation';
+
+import ProjectFeed from './blogs/page';
 
 export default function Home() {
 

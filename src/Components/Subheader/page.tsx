@@ -12,4 +12,4 @@ const Subheader = ({ title, icon } : { title: string, icon: any}) => {
     )
 }
 
-export default Subheader
+export default Subheader;
