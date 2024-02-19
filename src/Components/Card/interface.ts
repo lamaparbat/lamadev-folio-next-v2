@@ -1,7 +1,7 @@
 
 
 type Link = {
-  siteLink: string,
+  site: string,
   github?: string
 }
 

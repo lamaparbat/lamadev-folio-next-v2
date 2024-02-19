@@ -6,7 +6,7 @@ export const styles = {
   title: "text-[14px] mt-2",
   sub_title: "text-[12px] -mt-[3px]",
   para: "mt-2 text-[12px]",
-  imgContainer: "bg-red-500 mt-4 w-100 h-[200px] overflow-hidden rounded-md relative",
+  imgContainer: "bg-slate-100 mt-4 w-100 h-[200px] overflow-hidden rounded-md relative",
   image: "w-full h-full",
   footer: "w-100 flex justify-between animateOff",
   footer_child: "mt-2 mb-5 p-2 w-[49%]  border-color card-shadow rounded-md cursor-pointer transition duration-200 hover:-translate-y-1 hover:ease-in-out",

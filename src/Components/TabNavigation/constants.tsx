@@ -26,7 +26,7 @@ export const styles = {
   nav_button: "p-4 rounded-full hover:bg-slate-300 ease-in-out duration-500 cursor-pointer",
   tooltip: "ml-4 rounded-r-xl",
   badge: 'badge-circular shadow-xl block sm:hidden cursor-pointer fixed bottom-1 right-1 mb-[30px] mr-[20px] z-40',
-  badgeWrapper: "bg-red-200 animateOff",
+  badgeWrapper: "bg-slate-100 animateOff",
   menuIconSIze: 'text-3xl',
   navbar2: `w-[150px] h-screen fixed bottom-1 right-1 -mb-[70px] -mr-[30px] flex flex-col justify-center items-center z-30 rounded-tr-2xl rounded-br-2xl`,
 }
