@@ -18,7 +18,7 @@ const SkillsCard = ({
     return (
         <div className="skill_card h-fit w-full sm:w-[47%]  p-3 rounded-md shadow-inner dark:bg-zinc-900 dark:shadow-black mb-2 animateOff">
             <div className="flex-between cursor-pointer" onClick={handleOpenUiUxBoxOpen}>
-                <h4>{title}</h4>
+                <h4 className='font-semibold'>{title}</h4>
                 <BsChevronDown />
             </div>
             {
@@ -27,7 +27,7 @@ const SkillsCard = ({
                         <div className="mt-3">
                             {
                                 items?.map((d, i) => (
-                                    <div className="flex-between mb-2" key={i}>
+                                    <div className="flex-between mb-2 text-[#3d3d3d]" key={i}>
                                         <span>{d?.name}</span>
                                         {d?.Icon}
                                     </div>

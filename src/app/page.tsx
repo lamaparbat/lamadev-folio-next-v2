@@ -98,7 +98,7 @@ export default function Home() {
               wrapper="p"
               cursor={true}
               repeat={0}
-              style={{ display: 'inline-block', color:'#3d3d3d' }}
+              style={{ display: 'inline-block', color: '#3d3d3d' }}
             />
           </div>
         </div>

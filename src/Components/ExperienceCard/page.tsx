@@ -17,7 +17,7 @@ const ExperienceCard = ({
 }: ExperienceCardProps) => {
     return (
         <div className="experience_card w-full flex-between mb-5 animateOff">
-            <div className='h-[70px] w-[100px] flex justify-center items-center  rounded border-r-2 border-green-500 hidden sm:flex'>
+            <div className='h-[70px] w-[100px] hidden justify-center items-center  rounded border-r-2 border-green-500 sm:flex'>
                 <img
                     src={logo}
                     alt=""
@@ -28,11 +28,11 @@ const ExperienceCard = ({
                     <h2 className="text-lg">{companyName}</h2>
                     <HiOutlineExternalLink className='-mt-2 cursor-pointer hover:text-red-500' />
                 </div>
-                <div className="flex-between flex-wrap">
+                <div className="flex-between flex-wrap text-[#3d3d3d] leading-[16px]">
                     <span className="">{position}</span>
                     <span className="font-mono sm:mt-1">{engagedDuration}</span>
                 </div>
-                <div className='flex mt-1'>
+                <div className='flex mt-1 text-[#3d3d3d] leading-[16px]'>
                     <div className='flex-between'>
                         <BsDot className='text-lg' />
                         <span className='text-sm'>{workingHours}</span>
