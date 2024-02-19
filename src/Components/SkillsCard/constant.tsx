@@ -1,18 +1,20 @@
 import { LuFigma } from "react-icons/lu";
 import {
-    SiAdobeaftereffects, 
-    SiReact, 
-    SiTailwindcss, 
-    SiSass, 
-    SiBootstrap, 
-    SiNodedotjs, 
-    SiExpress, 
-    SiPhp, 
-    SiSocketdotio, 
+    SiAdobeaftereffects,
+    SiReact,
+    SiTailwindcss,
+    SiSass,
+    SiBootstrap,
+    SiNodedotjs,
+    SiExpress,
+    SiPhp,
+    SiSocketdotio,
     SiFirebase,
     SiMongodb,
     SiMysql,
-    SiPostgresql
+    SiPostgresql,
+    SiGraphql,
+    SiPayloadcms
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -22,7 +24,7 @@ export const Skills = {
         { name: 'Adobe XD', Icon: <SiAdobeaftereffects /> },
     ],
     frontend: [
-        { name: 'React', Icon: <SiReact /> },
+        { name: 'React JS', Icon: <SiReact /> },
         { name: 'Next.JS', Icon: <TbBrandNextjs /> },
         { name: 'Tailwind CSS', Icon: <SiTailwindcss /> },
         { name: 'SaSS', Icon: <SiSass /> },
@@ -30,9 +32,10 @@ export const Skills = {
     ],
     backend: [
         { name: 'Node.js', Icon: <SiNodedotjs /> },
-        { name: 'Express.js', Icon: <SiExpress /> },
+        { name: 'Express.js / REST', Icon: <SiExpress /> },
+        { name: 'Graphql', Icon: <SiGraphql /> },
+        { name: 'PayloadCMS', Icon: <SiPayloadcms /> },
         { name: 'Hapi.js', Icon: <SiNodedotjs /> },
-        { name: 'Core PHP', Icon: <SiPhp /> },
         { name: 'Socket.io', Icon: <SiSocketdotio /> },
         { name: 'Firebase', Icon: <SiFirebase /> },
     ],
