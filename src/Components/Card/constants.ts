@@ -2,7 +2,7 @@
 
 // styles
 export const styles = {
-  card: "feed_card flex flex-col justify-between p-2  h-[300px] w-full sm:w-[270px] border-color card-shadow rounded-md cursor-pointer animateOff",
+  card: "feed_card flex flex-col justify-between p-2  h-[300px] w-screen sm:w-[270px] border-color card-shadow rounded-md cursor-pointer animateOff",
   title: "text-[14px] leading-[21px] font-semibold mt-2",
   sub_title: "text-[12px] leading-[16px] text-[#3d3d3d] -mt-[3px]",
   para: "mt-2 text-[12px] text-[#3d3d3d]",
