@@ -20,14 +20,16 @@ const Card: React.FC<CardType> = ({ title, description, image, link, id }) => {
   return (
     <div>
       <div className={styles.card}>
-        <h2 className={styles.title}>{title}</h2>
-        <p className={styles.para}>{description}</p>
+        <div>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.para}>{description}</p>
+        </div>
         <div className={styles.imgContainer}>
           <Image
             src={image}
-            alt=""
-            height={200}
-            width={300}
+            alt={styles.title}
+            layout='fill'
+            objectFit='cover'
             className='hue-rotate-90'
           />
         </div>
