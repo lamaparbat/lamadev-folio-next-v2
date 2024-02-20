@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
+import { useTheme } from 'next-themes';
 import { TypeAnimation } from 'react-type-animation';
 
 import { HiAcademicCap } from 'react-icons/hi';
@@ -15,13 +16,12 @@ import JobStatus from '@/Components/JobStatus';
 import Subheader from '@/Components/Subheader/page';
 import SkillsCard from "@/Components/SkillsCard/page";
 import TabNavigation from '@/Components/TabNavigation';
-import AcademicCard from "@/Components/AcademicCard/page";
 import { Skills } from "@/Components/SkillsCard/constant";
+import AcademicCard from "@/Components/AcademicCard/page";
 import ExperienceCard from "@/Components/ExperienceCard/page";
 
 
 export default function Home() {
-
   useEffect(() => {
     const observers = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -98,7 +98,7 @@ export default function Home() {
               wrapper="p"
               cursor={true}
               repeat={0}
-              style={{ display: 'inline-block', color: '#3d3d3d' }}
+              style={{ display: 'inline-block' }}
             />
           </div>
         </div>

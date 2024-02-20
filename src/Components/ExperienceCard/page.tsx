@@ -28,18 +28,18 @@ const ExperienceCard = ({
                     <h2 className="text-lg">{companyName}</h2>
                     <HiOutlineExternalLink className='-mt-2 cursor-pointer hover:text-red-500' />
                 </div>
-                <div className="flex-between flex-wrap text-[#3d3d3d] leading-[16px]">
-                    <span className="">{position}</span>
-                    <span className="font-mono sm:mt-1">{engagedDuration}</span>
+                <div className="flex-between flex-wrap text-[#3d3d3d] leading-[16px] gap-2">
+                    <span className="my-1">{position}</span>
+                    <span className="font-mono">{engagedDuration}</span>
                 </div>
-                <div className='flex mt-1 text-[#3d3d3d] leading-[16px]'>
-                    <div className='flex-between'>
+                <div className='flex mt-2 text-[#3d3d3d] leading-[16px]'>
+                    <div className='flex-between bg-blue-100 text-black text-xs me-2 p-1 pr-3 rounded'>
                         <BsDot className='text-lg' />
-                        <span className='text-sm'>{workingHours}</span>
+                        <label className='text-sm'>{workingHours}</label>
                     </div>
-                    <div className='flex-between mx-3'>
+                    <div className='flex-between mx-3 bg-blue-100 text-black text-xs me-2 p-1 pr-3 rounded'>
                         <BsDot className='text-lg' />
-                        <span className='text-sm'>{jobType}</span>
+                        <label className='text-sm'>{jobType}</label>
                     </div>
                 </div>
             </div>
