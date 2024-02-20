@@ -1,24 +1,24 @@
 "use client";
 
 import { useEffect } from 'react';
-
 import { TypeAnimation } from 'react-type-animation';
+
 import { HiAcademicCap } from 'react-icons/hi';
-import { MdWorkspacePremium } from 'react-icons/md';
+import { GiSandsOfTime } from 'react-icons/gi';
 import { LiaSchoolSolid } from 'react-icons/lia';
 import { AiFillCheckCircle } from 'react-icons/ai';
-import { GiSandsOfTime } from 'react-icons/gi';
-
-import { pageStyles } from '@/Constants';
-import AcademicCard from "@/Components/AcademicCard/page";
-import ExperienceCard from "@/Components/ExperienceCard/page";
-import SkillsCard from "@/Components/SkillsCard/page";
-import { Skills } from "@/Components/SkillsCard/constant";
-import Subheader from '@/Components/Subheader/page';
-import JobStatus from '@/Components/JobStatus';
-import TabNavigation from '@/Components/TabNavigation';
+import { MdWorkspacePremium } from 'react-icons/md';
 
 import ProjectFeed from './blogs/page';
+import { pageStyles } from '@/Constants';
+import JobStatus from '@/Components/JobStatus';
+import Subheader from '@/Components/Subheader/page';
+import SkillsCard from "@/Components/SkillsCard/page";
+import TabNavigation from '@/Components/TabNavigation';
+import AcademicCard from "@/Components/AcademicCard/page";
+import { Skills } from "@/Components/SkillsCard/constant";
+import ExperienceCard from "@/Components/ExperienceCard/page";
+
 
 export default function Home() {
 
